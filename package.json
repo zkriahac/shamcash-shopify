@@ -1,0 +1,35 @@
+{
+  "name": "shamcash-shopify",
+  "version": "1.0.0",
+  "description": "Sham Cash (شام كاش) reconciliation worker for Shopify — matches incoming wallet transfers to pending orders (manual payment method) and marks them paid via the Admin API.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "zekeriya hacimuhammed <zkriahagmohamad@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zkriahac/shamcash-shopify.git"
+  },
+  "homepage": "https://github.com/zkriahac/shamcash-shopify#readme",
+  "bugs": {
+    "url": "https://github.com/zkriahac/shamcash-shopify/issues"
+  },
+  "files": [
+    "src",
+    ".env.example",
+    "README.md"
+  ],
+  "bin": {
+    "shamcash-reconcile": "src/reconcile.js",
+    "shamcash-worker": "src/worker.js"
+  },
+  "scripts": {
+    "reconcile": "node src/reconcile.js",
+    "start": "node src/worker.js",
+    "test": "node --test"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
