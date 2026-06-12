@@ -1,3 +1,5 @@
+**English** | [العربية](README.ar.md)
+
 # Sham Cash for Shopify
 
 Reconciliation worker that confirms **Sham Cash** (شام كاش) wallet payments for
